@@ -6,11 +6,11 @@ phases:
       java: corretto21
   build:
     commands:
-      - mvn -v
+      - cd demo
       - mvn clean test package
 
 artifacts:
   files:
-    - target/*.jar
+    - demo/target/*.jar
     - Procfile
   discard-paths: yes
