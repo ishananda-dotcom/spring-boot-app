@@ -14,6 +14,6 @@ public class VersionController {
 
     @GetMapping("/version")
     public Map<String, String> version() {
-        return Map.of("version", appVersion);
+        return Map.of("version of this", appVersion);
     }
 }
