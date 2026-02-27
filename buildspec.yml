@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto21
+  build:
+    commands:
+      - mvn -v
+      - mvn clean test package
+
+artifacts:
+  files:
+    - target/*.jar
+    - Procfile
+  discard-paths: yes
